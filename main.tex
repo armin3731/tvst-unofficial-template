@@ -2,6 +2,7 @@
 \usepackage{tvst}
 \usepackage{lipsum} % For filler text
 \usepackage{hyperref}
+\usepackage{tabularx}
 
 \begin{document}
 
@@ -41,14 +42,43 @@
 
 \begin{multicols}{2}
 \sectionbox{Introduction}
+In a brief Introduction (don't use any subheadings), provide the research rationale and objectives without extensively reviewing the literature.
 
+\sectionbox{Methods}
+In the Methods section, describe the experimental design, subjects used, and procedures followed. Previously published procedures should be identified by reference only. Provide sufficient detail to enable others to duplicate the research. Use standard chemical or nonproprietary pharmaceutical nomenclature. In parentheses, identify specific sources by brand name, company, city, and state or country.
 
-Keratoconus (KC) is a bilateral, asymmetric corneal ectasia characterized by irregular thinning and steepening of the cornea into a conical shape. These progressive changes in the cornea dramatically affect vision, leading to irregular astigmatism, myopia, and decreased visual acuity. Symptoms most often arise in the second or third decade of life...
+If human subjects were involved in the investigation, the Methods section must confirm that: (1) informed consent was obtained from the subjects after explanation of the nature and possible consequences of the study; and (2) where applicable, the research was conducted in compliance with a suitable accredited Institutional Review Board (IRB) or its equivalent (such as a human ethics committee).
+
+If experimental animals were used in the investigation, the Methods section must confirm adherence to the ARVO Statement for the Use of Animals in Ophthalmic and Vision Research and, where applicable, approval by the appropriate IRB.
 
 \subsection{This is Sub-Section}
 lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor. Pellentesque auctor nisi id magna consequat sagittis. Curabitur dapibus enim sit amet elit pharetra tincidunt feugiat nisl imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros. Donec viverra
 \subsubsection{This is Sub-Sub-Section}
 lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut    
+\begin{figure*}[ht] % [t] is recommended for double-column floats
+    \centering
+    \includegraphics[width=1.0\textwidth]{images/placeholder.png}
+    \caption{This a sample figure.}
+\end{figure*}
+% Full-width Table
+\begin{table*}[t]
+    \caption{This is a sample table.}
+    \sffamily
+    % \small % Only use if you want to reduce the font size for the table content
+    \Large
+    \begin{tabularx}{\textwidth}{XXXX}
+        Column 1 & Column 2 & Column 3 & Column 4 \\
+        \hline
+        Data A & Data B & Data C & Data D \\
+        Data A & Data B & Data C & Data D \\
+        Data A & Data B & Data C & Data D \\                
+        Data A & Data B & Data C & Data D \\        
+        \hline
+    \end{tabularx}
+\end{table*}
+
+
+
 \end{multicols}
 
 \end{document}

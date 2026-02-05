@@ -13,6 +13,7 @@
 \RequirePackage{tikz}
 \RequirePackage{titlesec}
 \definecolor{tvstblue}{RGB}{0, 114, 188}
+\RequirePackage{caption}
 
 % Vertical Sidebar logic
 \backgroundsetup{
@@ -55,3 +56,12 @@
   {}                                % Label (e.g., 1.1.1)
   {1em}                                              % Space between label and title
   {}                                                 % Code preceding title body
+
+
+\captionsetup{
+  labelfont={sf,bf, color=tvstblue}, % Bold and Blue label
+  textfont={sf,color=black},  % Italic black text
+  font=large,              % Overall smaller font size
+  justification=raggedright,     % Centers the caption
+  singlelinecheck=false        % Forces centering even for short lines
+}
