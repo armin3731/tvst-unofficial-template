@@ -11,7 +11,7 @@
 \RequirePackage{multicol}
 \RequirePackage{background}
 \RequirePackage{tikz}
-
+\RequirePackage{titlesec}
 \definecolor{tvstblue}{RGB}{0, 114, 188}
 
 % Vertical Sidebar logic
@@ -41,3 +41,17 @@
 \newcommand{\sectionbox}[1]{%
     \vspace{1em}\noindent\colorbox{tvstblue}{\parbox[c][1.5em]{\linewidth}{\color{white}\Large\sffamily\bfseries\hspace{0.5em}#1}}\par\vspace{1em}
 }
+
+% Format for Subsections
+\titleformat{\subsection}
+  {\normalfont\sffamily\large\bfseries} % Font style: Sans Serif, Large, Bold
+  {}                     % Label (e.g., 1.1)
+  {1em}                                % Space between label and title
+  {}                                   % Code preceding title body
+
+% Format for Subsubsections
+\titleformat{\subsubsection}
+  {\normalfont\sffamily\normalsize\bfseries\itshape} % Font style: Sans, Bold, Italic
+  {}                                % Label (e.g., 1.1.1)
+  {1em}                                              % Space between label and title
+  {}                                                 % Code preceding title body
