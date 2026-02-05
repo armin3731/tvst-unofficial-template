@@ -1,0 +1,43 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{tvst}[Unofficial TVST Journal Template]
+
+\RequirePackage[utf8]{inputenc}
+\RequirePackage[T1]{fontenc}
+\RequirePackage[left=1.5in, right=0.75in, top=0.75in, bottom=1in, marginparsep=0.5in]{geometry}
+\RequirePackage[sfdefault]{sourcesanspro} % Title/Header font
+\RequirePackage{tgtermes}                % Body font (Times clone)
+\RequirePackage{xcolor}
+\RequirePackage{graphicx}
+\RequirePackage{multicol}
+\RequirePackage{background}
+\RequirePackage{tikz}
+
+\definecolor{tvstblue}{RGB}{0, 114, 188}
+
+% Vertical Sidebar logic
+\backgroundsetup{
+  scale=1, angle=90, opacity=1, color=tvstblue, 
+  contents={
+    \begin{tikzpicture}[remember picture, overlay]
+      \node[anchor=west, xshift=1.5cm, yshift=10.0cm] at (current page.west) 
+      {\Large\sffamily translational vision science \& technology |};
+    \end{tikzpicture}
+  }
+}
+
+% Custom commands for layout
+\newcommand{\journalheader}{
+    \hspace{-1em}{\large\sffamily\color{tvstblue} tvst}\\[-0.5ex]
+    \textcolor{tvstblue}{\rule{\textwidth}{1.5pt}}\\[0.5ex]
+    \colorbox{tvstblue}{\color{white}\sffamily\bfseries\strut Cornea \& External Disease}\par\vspace{1em}
+}
+
+\newcommand{\papertitle}[1]{{\huge\sffamily\bfseries\raggedright #1\par}\vspace{1.5em}}
+\newcommand{\authorlist}[1]{{\large\sffamily\bfseries #1\par}\vspace{1em}}
+\newcommand{\affiliations}[1]{{\scriptsize\sffamily #1\par}\vspace{2em}}
+
+\newcommand{\infosection}[2]{{\footnotesize\sffamily \textbf{#1:} #2\par}\vspace{0.5em}}
+
+\newcommand{\sectionbox}[1]{%
+    \vspace{1em}\noindent\colorbox{tvstblue}{\parbox[c][1.5em]{\linewidth}{\color{white}\Large\sffamily\bfseries\hspace{0.5em}#1}}\par\vspace{1em}
+}

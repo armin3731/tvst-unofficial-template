@@ -1,0 +1,10 @@
+# remove next line if you want to keep the generated PDF file
+*.pdf
+
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.toc
+*.synctex.gz
