@@ -18,3 +18,5 @@ An unofficial LaTeX template for Translational Vision Science & Technology (TVST
 3. Replace placeholder text and images as needed
 4. Compile with your LaTeX editor
 
+
+![Example PDF Output](images/first_page.png)
