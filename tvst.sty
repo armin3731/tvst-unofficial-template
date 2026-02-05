@@ -3,7 +3,7 @@
 
 \RequirePackage[utf8]{inputenc}
 \RequirePackage[T1]{fontenc}
-\RequirePackage[left=1.5in, right=0.75in, top=0.75in, bottom=1in, marginparsep=0.5in]{geometry}
+\RequirePackage[left=1.5cm, right=0.75cm, top=0.75cm, bottom=1in, marginparsep=0.5cm]{geometry}
 \RequirePackage[sfdefault]{sourcesanspro} % Title/Header font
 \RequirePackage{tgtermes}                % Body font (Times clone)
 \RequirePackage{xcolor}
@@ -19,15 +19,15 @@
   scale=1, angle=90, opacity=1, color=tvstblue, 
   contents={
     \begin{tikzpicture}[remember picture, overlay]
-      \node[anchor=west, xshift=1.5cm, yshift=10.0cm] at (current page.west) 
-      {\Large\sffamily translational vision science \& technology |};
+      \node[anchor=west, xshift=-3.0cm, yshift=9.5cm] at (current page.west) 
+      {\Large\sffamily \textbf{translational} vision science \& technology \rule[0.5ex]{17.5cm}{1pt}};
     \end{tikzpicture}
   }
 }
 
 % Custom commands for layout
 \newcommand{\journalheader}{
-    \hspace{-1em}{\large\sffamily\color{tvstblue} tvst}\\[-0.5ex]
+    \hspace{-1.2em}{\Huge\sffamily\color{tvstblue} tvst}\\[-0.5ex]
     \textcolor{tvstblue}{\rule{\textwidth}{1.5pt}}\\[0.5ex]
     \colorbox{tvstblue}{\color{white}\sffamily\bfseries\strut Cornea \& External Disease}\par\vspace{1em}
 }
