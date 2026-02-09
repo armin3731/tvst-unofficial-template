@@ -9,3 +9,6 @@
 *.toc
 *.synctex.gz
 .vscode/
+*.bbl
+*.bcf
+*.xml

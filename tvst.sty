@@ -14,7 +14,12 @@
 \RequirePackage{titlesec}
 \definecolor{tvstblue}{RGB}{0, 114, 188}
 \RequirePackage{caption}
-
+\RequirePackage{hyperref}
+\RequirePackage[
+  backend=biber,
+  style=numeric-comp,
+  autocite=superscript
+]{biblatex}
 % Vertical Sidebar logic
 \backgroundsetup{
   scale=1, angle=90, opacity=1, color=tvstblue, 
@@ -65,3 +70,21 @@
   justification=raggedright,     % Centers the caption
   singlelinecheck=false        % Forces centering even for short lines
 }
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=tvstblue,
+  citecolor=tvstblue,
+  urlcolor=tvstblue
+}
+
+\defbibheading{bibliography}[\refname]{%
+  \sectionbox{#1} \vspace{-1.0em}
+}
+
+% \DeclareCiteCommand{\cite}[\mkbibsuperscript]
+%   {\usebibmacro{prenote}}
+%   {\usebibmacro{citeindex}%
+%    \usebibmacro{cite}}
+%   {\multicitedelim}
+%   {\usebibmacro{postnote}}
