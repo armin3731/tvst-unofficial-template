@@ -12,3 +12,5 @@
 *.bbl
 *.bcf
 *.xml
+*.blg
+*.run.xml

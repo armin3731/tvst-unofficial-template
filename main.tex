@@ -4,7 +4,8 @@
 \usepackage{hyperref}
 \usepackage{tabularx}
 \usepackage{float}
-\usepackage[backend=biber]{biblatex}
+% \usepackage{biblatex}
+
 \addbibresource{references.bib}
 
 \begin{document}
@@ -91,7 +92,7 @@ lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Se
 \end{figure*}
 % Full-width Table
 \sectionbox{Results}
-Present the Results with a minimum of discussion. Cite all tables and figures in numerical order. Rationale and objectives without extensively reviewing the literature. This is an equation referenced in the text Eq.~\ref{eq:sample_equation}. And this is how you can cite a reference in the text~\cite{einstein1905}.
+Present the Results with a minimum of discussion. Cite all tables and figures in numerical order. Rationale and objectives without extensively reviewing the literature. This is an equation referenced in the text Eq.~\ref{eq:sample_equation}. And this is how you can cite a reference in the text~\autocite{einstein1905}.
 \begin{equation}
 \sum_{i=1}^N \sum_{j=1}^M A_{ij} x_i y_j
 \label{eq:sample_equation}
